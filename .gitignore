@@ -3,3 +3,4 @@ build
 build_webpack
 .vscode
 .idea
+.DS_Store
