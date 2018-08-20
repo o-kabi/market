@@ -2,15 +2,21 @@
   "name": "drizzle-box",
   "version": "1.0.0",
   "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
     "ganache-cli": "^6.1.6",
     "openzeppelin-solidity": "^1.10.0",
+    "prettier": "^1.14.2",
     "truffle": "^4.1.13",
     "truffle-hdwallet-provider": "^0.0.6"
   },
   "dependencies": {
-    "drizzle": "^1.2.2",
-    "drizzle-react": "^1.1.1",
-    "drizzle-react-components": "^1.2.0",
     "autoprefixer": "^9.1.1",
     "babel-core": "6.26.0",
     "babel-eslint": "^8.2.6",
@@ -23,13 +29,12 @@
     "css-loader": "^1.0.0",
     "dotenv": "^6.0.0",
     "dotenv-expand": "4.2.0",
-    "eslint": "^5.4.0",
+    "drizzle": "^1.2.2",
+    "drizzle-react": "^1.1.1",
+    "drizzle-react-components": "^1.2.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "^2.1.0",
     "eslint-plugin-flowtype": "2.39.1",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "7.4.0",
     "eth-block-tracker-es5": "^2.3.2",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
@@ -66,7 +71,7 @@
     "build": "truffle compile && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "chain": "ganache-cli -b 3",
-    "prepare": "npm run build"
+    "lint": "eslint"
   },
   "jest": {
     "collectCoverageFrom": [
